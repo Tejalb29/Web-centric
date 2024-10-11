@@ -10,8 +10,8 @@ if(isset($_COOKIE['studentID'])){
 
 if(isset($_POST['submit'])){
 
-   $name = $_POST['username']; 
-   $name = filter_var($username, FILTER_SANITIZE_STRING);
+   $username = $_POST['username']; 
+   $username = filter_var($username, FILTER_SANITIZE_STRING);
    $email = $_POST['email']; 
    $email = filter_var($email, FILTER_SANITIZE_STRING);
    $number = $_POST['number']; 
@@ -19,14 +19,14 @@ if(isset($_POST['submit'])){
    $msg = $_POST['msg']; 
    $msg = filter_var($msg, FILTER_SANITIZE_STRING);
 
-   $select_contact = $conn->prepare("SELECT * FROM `contact` WHERE name = ? AND email = ? AND number = ? AND message = ?");
-   $select_contact->execute([$name, $email, $number, $msg]);
+   $select_contact = $conn->prepare("SELECT * FROM `contact` WHERE username = ? AND email = ? AND number = ? AND message = ?");
+   $select_contact->execute([$username, $email, $number, $msg]);
 
    if($select_contact->rowCount() > 0){
       $message[] = 'message sent already!';
    }else{
-      $insert_message = $conn->prepare("INSERT INTO `contact`(name, email, number, message) VALUES(?,?,?,?)");
-      $insert_message->execute([$name, $email, $number, $msg]);
+      $insert_message = $conn->prepare("INSERT INTO `contact`(username, email, number, message) VALUES(?,?,?,?)");
+      $insert_message->execute([$username, $email, $number, $msg]);
       $message[] = 'message sent successfully!';
    }
 
@@ -65,7 +65,7 @@ if(isset($_POST['submit'])){
 
       <form action="" method="post">
          <h3>get in touch</h3>
-         <input type="text" placeholder="enter your username" required maxlength="100" name="name" class="box">
+         <input type="text" placeholder="enter your username" required maxlength="100" name="username" class="box">
          <input type="email" placeholder="enter your email" required maxlength="100" name="email" class="box">
          <input type="number" min="0" max="9999999999" placeholder="enter your number" required maxlength="10" name="number" class="box">
          <textarea name="msg" class="box" placeholder="enter your message" required cols="30" rows="10" maxlength="1000"></textarea>
