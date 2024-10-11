@@ -1,6 +1,6 @@
 <?php
 
-include 'components/connect.php';
+include 'connect.php';
 
 if(isset($_COOKIE['user_id'])){
    $user_id = $_COOKIE['user_id'];
@@ -41,44 +41,8 @@ if(isset($_COOKIE['user_id'])){
 
       <div class="content">
          <h3>why choose us?</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nobis distinctio, nisi consequatur ad sequi, rem odit fugiat assumenda eligendi iure aut sunt ratione, tempore porro expedita quisquam.</p>
+         <p>Virtu-Learn combines personalized tutoring with expert educators and flexible scheduling to support every learner. Our passionate tutors create engaging learning experiences, making education effective and enjoyable. Whether you need homework help or exam preparation, we provide a safe and supportive environment to help you achieve your academic goals. Unlock your potential with Virtu-Learn!</p>
          <a href="courses.html" class="inline-btn">our courses</a>
-      </div>
-
-   </div>
-
-   <div class="box-container">
-
-      <div class="box">
-         <i class="fas fa-graduation-cap"></i>
-         <div>
-            <h3>+1k</h3>
-            <span>online courses</span>
-         </div>
-      </div>
-
-      <div class="box">
-         <i class="fas fa-user-graduate"></i>
-         <div>
-            <h3>+25k</h3>
-            <span>brilliants students</span>
-         </div>
-      </div>
-
-      <div class="box">
-         <i class="fas fa-chalkboard-user"></i>
-         <div>
-            <h3>+5k</h3>
-            <span>expert teachers</span>
-         </div>
-      </div>
-
-      <div class="box">
-         <i class="fas fa-briefcase"></i>
-         <div>
-            <h3>100%</h3>
-            <span>job placement</span>
-         </div>
       </div>
 
    </div>
@@ -96,11 +60,26 @@ if(isset($_COOKIE['user_id'])){
    <div class="box-container">
 
       <div class="box">
-         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo fugiat, quaerat voluptate odio consectetur assumenda fugit maxime unde at ex?</p>
+         <p>Virtu-Learn has been a game-changer for my studies! The tutors are knowledgeable and really take the time to understand my learning style.</p>
          <div class="user">
-            <img src="images/pic-2.jpg" alt="">
             <div>
-               <h3>john deo</h3>
+               <h3>johnm</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <p>I love the flexibility that Virtu-Learn offers. I can schedule sessions around my busy life, and the online platform is easy to use.</p>
+         <div class="user">
+            <div>
+               <h3>sarahk</h3>
                <div class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -113,11 +92,10 @@ if(isset($_COOKIE['user_id'])){
       </div>
 
       <div class="box">
-         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo fugiat, quaerat voluptate odio consectetur assumenda fugit maxime unde at ex?</p>
+         <p>"Virtu-Learn has excellent resources and supportive tutors. The personalized approach helped me prepare for my exams effectively.</p>
          <div class="user">
-            <img src="images/pic-3.jpg" alt="">
             <div>
-               <h3>john deo</h3>
+               <h3>emilyr</h3>
                <div class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -130,68 +108,32 @@ if(isset($_COOKIE['user_id'])){
       </div>
 
       <div class="box">
-         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo fugiat, quaerat voluptate odio consectetur assumenda fugit maxime unde at ex?</p>
+         <p>The tutors are friendly and patient, and they really help me understand the material. I feel more prepared for my classes than ever before!</p>
          <div class="user">
-            <img src="images/pic-4.jpg" alt="">
             <div>
-               <h3>john deo</h3>
+               <h3>michealt</h3>
                <div class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
+                  <i class="fas fa-star"></i>
                </div>
             </div>
          </div>
       </div>
 
       <div class="box">
-         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo fugiat, quaerat voluptate odio consectetur assumenda fugit maxime unde at ex?</p>
+         <p>"I had a great experience with Virtu-Learn! The personalized tutoring sessions helped me grasp complex concepts easily. I'm very satisfied with my progress!</p>
          <div class="user">
-            <img src="images/pic-5.jpg" alt="">
             <div>
-               <h3>john deo</h3>
+               <h3>sophiad</h3>
                <div class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div class="box">
-         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo fugiat, quaerat voluptate odio consectetur assumenda fugit maxime unde at ex?</p>
-         <div class="user">
-            <img src="images/pic-6.jpg" alt="">
-            <div>
-               <h3>john deo</h3>
-               <div class="stars">
                   <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div class="box">
-         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo fugiat, quaerat voluptate odio consectetur assumenda fugit maxime unde at ex?</p>
-         <div class="user">
-            <img src="images/pic-7.jpg" alt="">
-            <div>
-               <h3>john deo</h3>
-               <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
                </div>
             </div>
          </div>
@@ -202,14 +144,6 @@ if(isset($_COOKIE['user_id'])){
 </section>
 
 <!-- reviews section ends -->
-
-
-
-
-
-
-
-
 
 
 <?php include 'components/footer.php'; ?>
