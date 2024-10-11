@@ -257,6 +257,7 @@
  }
 
 /*COURSE CSS*/
+
 .courses .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, 35rem);
@@ -316,3 +317,39 @@
     margin-top: 2rem;
     text-align: center;
  }
+
+/* Style for the image container */
+.image-container {
+    width: 100%; /* Full width of the box */
+    height: 200px; /* Fixed height for square images */
+    overflow: hidden; /* Hide overflow */
+    display: flex; /* Use flex to center image if needed */
+    align-items: center; /* Center image vertically */
+    justify-content: center; /* Center image horizontally */
+}
+
+/* Style for images */
+.image-container img {
+    width: 100%; /* Make image fill container width */
+    height: 100%; /* Make image fill container height */
+    object-fit: cover; /* Fill the container while maintaining aspect ratio */
+}
+
+/* Style for the courses section */
+.courses {
+    text-align: center; /* Center text in the section */
+    margin-bottom: 20px; /* Space below the section */
+}
+
+/* Style for the heading */
+.courses .heading {
+    font-size: 2.5rem; /* Increase font size for the heading */
+    color: #333; /* Change color if needed */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Scale up heading on hover */
+.courses .heading:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    
+}

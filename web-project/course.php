@@ -42,7 +42,12 @@ $user_id = $_COOKIE['user_id'] ?? '';
                 $select_tutor->execute();
                 $fetch_tutor = $select_tutor->get_result()->fetch_assoc();
                 ?>
+            
                 <div class="box">
+                    <!-- Image section -->
+                    <div class="image-container">
+                        <img src="<?= htmlspecialchars($fetch_course['image_link']); ?>" alt="<?= htmlspecialchars($fetch_course['courseName']); ?>" style="max-width: 100%; height: auto;">
+                    </div>
                     <h3 class="title"><?= htmlspecialchars($fetch_course['courseName']); ?></h3>
                     <p class="description"><?= htmlspecialchars($fetch_course['description']); ?></p>
                     <a href="playlist.php?get_id=<?= htmlspecialchars($fetch_course['courseID']); ?>" class="inline-btn">View Playlist</a>
@@ -56,6 +61,7 @@ $user_id = $_COOKIE['user_id'] ?? '';
     </div>
 </section>
 <!-- Courses section ends -->
+
 
 </body>
 </html>
