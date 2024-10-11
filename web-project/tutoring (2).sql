@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 11, 2024 at 06:44 AM
+-- Generation Time: Oct 11, 2024 at 06:27 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -57,40 +57,41 @@ CREATE TABLE `course` (
   `description` varchar(10000) NOT NULL,
   `schedule` varchar(100) NOT NULL,
   `field` varchar(1000) NOT NULL,
-  `tutorID` varchar(30) NOT NULL
+  `tutorID` varchar(30) NOT NULL,
+  `image_link` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `course`
 --
 
-INSERT INTO `course` (`courseID`, `courseName`, `description`, `schedule`, `field`, `tutorID`) VALUES
-('ART001', 'Painting and Drawing', 'Learn foundational painting and drawing techniques, exploring color, form, and mixed media styles.', 'Flexible', 'Creative Art', 'T006'),
-('ART002', 'Digital Art', 'Learn techniques for creating digital artwork, including character design, concept art, and illustration.', 'Flexible', 'Creative Art', 'T006'),
-('ART003', 'Ceramics and Pottery', 'Learn pottery skills, from hand-building and wheel throwing to glazing and creating functional pieces.', 'Flexible', 'Creative Art', 'T006'),
-('ART004', '3D Art', 'Learn to create three-dimensional artworks using various materials and digital 3D modeling tools.', 'Flexible', 'Creative Art', 'T007'),
-('ART005', 'Photography', 'Master the art of photography, covering camera techniques, composition, and post-processing skills.', 'Flexible', 'Creative Art', 'T007'),
-('FIN001', 'Introduction to Finance', 'Covers fundamental principles like time value of money, financial statements, and essential investment concepts.', 'Flexible', 'Finance', 'T017'),
-('FIN002', 'Financial Accounting', 'Focuses on reporting financial information to external users, such as investors, creditors, and regulatory agencies.', 'Flexible', 'Finance', 'T018'),
-('FIN003', 'Fintech and Financial Innovation', 'Study the impact of technology on financial services, including digital payments, and robo-advisors.', 'Flexible', 'Finance', 'T018'),
-('FIN004', 'International Finance', 'Study financial management in an international context, including exchange rates, foreign investment, and global markets.', 'Flexible', 'Finance', 'T019'),
-('FIN005', 'Auditing', 'Involves the examination of financial statements and accounting records to ensure accuracy and compliance with accounting standards.', 'Flexible', 'Finance', 'T020'),
-('IT001', 'Computer Science', 'Study algorithms, programming, data structures, and foundational principles of computing.', 'Flexible', 'IT', 'T001'),
-('IT002', 'Software Engineering', 'Learn software design, development, and management methodologies for creating reliable software products.', 'Flexible', 'IT', 'T010'),
-('IT003', 'Cybersecurity', 'Study techniques to protect networks, systems, and data from cyber threats and attacks.', 'Flexible', 'IT', 'T013'),
-('IT004', 'Data Science', 'Explore data collection, analysis, and visualization to make data-driven decisions.', 'Flexible', 'IT', 'T013'),
-('IT005', 'Artificial Intelligence', 'Study AI principles, from machine learning to natural language processing and robotics.', 'Flexible', 'IT', 'T012'),
-('IT006', 'Cloud Computing', 'Learn cloud services, architecture, and deployment for scalable, on-demand computing.', 'Flexible', 'IT', 'T011'),
-('MGMT001', 'Project Management', 'Focus on planning, executing, and monitoring projects, utilizing methodologies like Agile, Scrum, and waterfall approaches.', 'Flexible', 'Management', 'T014'),
-('MGMT002', 'Operations Management', 'Optimize production, manage resources, and enhance efficiency within manufacturing or service processes.', 'Flexible', 'Management', 'T014'),
-('MGMT003', 'Strategic Management', 'Develop strategies, analyze competition, and adapt to changing market dynamics for long-term business success.', 'Flexible', 'Management', 'T015'),
-('MGMT004', 'Human Resource Management', 'Manage recruitment, training, and development to build a motivated, high-performing workforce.', 'Flexible', 'Management', 'T016'),
-('MGMT005', 'Leadership and Organizational Behavior', 'Study leadership and organizational culture’s impact on employee motivation, satisfaction, and performance.', 'Flexible', 'Management', 'T016'),
-('MKT001', 'Digital Marketing', 'Learn digital strategies, SEO, social media, and online advertising for effective digital marketing campaigns.', 'Flexible', 'Marketing', 'T001'),
-('MKT002', 'Content Marketing', 'Explore techniques to create and manage content that engages audiences and builds brand loyalty.', 'Flexible', 'Marketing', 'T002'),
-('MKT003', 'Social Media Marketing', 'Master social media platforms and tools for building brand presence and connecting with audiences.', 'Flexible', 'Marketing', 'T003'),
-('MKT004', 'Market Analysis', 'Learn techniques for gathering, analyzing, and interpreting data to inform strategic business decisions.', 'Flexible', 'Marketing', 'T004'),
-('MKT005', 'Brand Management', 'Understand brand positioning, equity, and strategies for building and maintaining a strong brand identity.', 'Flexible', 'Marketing', 'T005');
+INSERT INTO `course` (`courseID`, `courseName`, `description`, `schedule`, `field`, `tutorID`, `image_link`) VALUES
+('ART001', 'Painting and Drawing', 'Learn foundational painting and drawing techniques, exploring color, form, and mixed media styles.', 'Flexible', 'Creative Art', 'T006', 'images\\course_image\\painting1.jpg'),
+('ART002', 'Digital Art', 'Learn techniques for creating digital artwork, including character design, concept art, and illustration.', 'Flexible', 'Creative Art', 'T006', 'images\\course_image\\digitalArt.jpg'),
+('ART003', 'Ceramics and Pottery', 'Learn pottery skills, from hand-building and wheel throwing to glazing and creating functional pieces.', 'Flexible', 'Creative Art', 'T006', 'images\\course_image\\ceramics.jpg'),
+('ART004', '3D Art', 'Learn to create three-dimensional artworks using various materials and digital 3D modeling tools.', 'Flexible', 'Creative Art', 'T007', 'images\\course_image\\3D-art.jpg'),
+('ART005', 'Photography', 'Master the art of photography, covering camera techniques, composition, and post-processing skills.', 'Flexible', 'Creative Art', 'T007', 'images\\course_image\\photography.png'),
+('FIN001', 'Introduction to Finance', 'Covers fundamental principles like time value of money, financial statements, and essential investment concepts.', 'Flexible', 'Finance', 'T017', 'images\\course_image\\introToFinance.jpeg'),
+('FIN002', 'Financial Accounting', 'Focuses on reporting financial information to external users, such as investors, creditors, and regulatory agencies.', 'Flexible', 'Finance', 'T018', 'images\\course_image\\FinancialAccounting.jpeg'),
+('FIN003', 'Fintech and Financial Innovation', 'Study the impact of technology on financial services, including digital payments, and robo-advisors.', 'Flexible', 'Finance', 'T018', 'images\\course_image\\finTech.jpeg'),
+('FIN004', 'International Finance', 'Study financial management in an international context, including exchange rates, foreign investment, and global markets.', 'Flexible', 'Finance', 'T019', 'images\\course_image\\international-finance.avif'),
+('FIN005', 'Auditing', 'Involves the examination of financial statements and accounting records to ensure accuracy and compliance with accounting standards.', 'Flexible', 'Finance', 'T020', 'images\\course_image\\audit.jpeg'),
+('IT001', 'Computer Science', 'Study algorithms, programming, data structures, and foundational principles of computing.', 'Flexible', 'IT', 'T001', 'images\\course_image\\computer-science.png'),
+('IT002', 'Software Engineering', 'Learn software design, development, and management methodologies for creating reliable software products.', 'Flexible', 'IT', 'T010', 'images\\course_image\\software_engineering.jpg'),
+('IT003', 'Cybersecurity', 'Study techniques to protect networks, systems, and data from cyber threats and attacks.', 'Flexible', 'IT', 'T013', 'images\\course_image\\cybersecurity.jpg'),
+('IT004', 'Data Science', 'Explore data collection, analysis, and visualization to make data-driven decisions.', 'Flexible', 'IT', 'T013', 'images\\course_image\\dataScience.jpeg'),
+('IT005', 'Artificial Intelligence', 'Study AI principles, from machine learning to natural language processing and robotics.', 'Flexible', 'IT', 'T012', 'images\\course_image\\AI.jpeg'),
+('IT006', 'Cloud Computing', 'Learn cloud services, architecture, and deployment for scalable, on-demand computing.', 'Flexible', 'IT', 'T011', 'images\\course_image\\cloudComputing.png'),
+('MGMT001', 'Project Management', 'Focus on planning, executing, and monitoring projects, utilizing methodologies like Agile, Scrum, and waterfall approaches.', 'Flexible', 'Management', 'T014', 'images\\course_image\\projectManagement.jpeg'),
+('MGMT002', 'Operations Management', 'Optimize production, manage resources, and enhance efficiency within manufacturing or service processes.', 'Flexible', 'Management', 'T014', 'images\\course_image\\operationsManagement.jpeg'),
+('MGMT003', 'Strategic Management', 'Develop strategies, analyze competition, and adapt to changing market dynamics for long-term business success.', 'Flexible', 'Management', 'T015', 'images\\course_image\\strategicManagement.jpeg'),
+('MGMT004', 'Human Resource Management', 'Manage recruitment, training, and development to build a motivated, high-performing workforce.', 'Flexible', 'Management', 'T016', 'images\\course_image\\hr.jpeg'),
+('MGMT005', 'Leadership and Organizational Behavior', 'Study leadership and organizational culture’s impact on employee motivation, satisfaction, and performance.', 'Flexible', 'Management', 'T016', 'images\\course_image\\Leadership.jpeg'),
+('MKT001', 'Digital Marketing', 'Learn digital strategies, SEO, social media, and online advertising for effective digital marketing campaigns.', 'Flexible', 'Marketing', 'T001', 'images\\course_image\\digitalMarketing.jpeg'),
+('MKT002', 'Content Marketing', 'Explore techniques to create and manage content that engages audiences and builds brand loyalty.', 'Flexible', 'Marketing', 'T002', 'images\\course_image\\contentMarketing.jpeg'),
+('MKT003', 'Social Media Marketing', 'Master social media platforms and tools for building brand presence and connecting with audiences.', 'Flexible', 'Marketing', 'T003', 'images\\course_image\\socialMedia.png'),
+('MKT004', 'Market Analysis', 'Learn techniques for gathering, analyzing, and interpreting data to inform strategic business decisions.', 'Flexible', 'Marketing', 'T004', 'images\\course_image\\marketAnalysis.jpeg'),
+('MKT005', 'Brand Management', 'Understand brand positioning, equity, and strategies for building and maintaining a strong brand identity.', 'Flexible', 'Marketing', 'T005', 'images\\course_image\\Brand_Management.png');
 
 -- --------------------------------------------------------
 
@@ -157,7 +158,7 @@ INSERT INTO `parent` (`parentID`, `fName`, `lName`, `username`, `password`, `occ
 CREATE TABLE `sessions` (
   `sessionID` varchar(30) NOT NULL,
   `topic` varchar(50) NOT NULL,
-  `duration` datetime NOT NULL,
+  `duration` time DEFAULT NULL,
   `startTime` time NOT NULL,
   `EndTime` time NOT NULL,
   `status` varchar(50) NOT NULL,
@@ -171,11 +172,11 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`sessionID`, `topic`, `duration`, `startTime`, `EndTime`, `status`, `studentID`, `courseID`, `tutorID`) VALUES
-('S001', 'Painting and Drawing', '0000-00-00 00:00:00', '10:00:00', '11:00:00', 'Scheduled', 'S001', 'ART001', 'T006'),
-('S002', 'Computer Science', '0000-00-00 00:00:00', '10:00:00', '11:00:00', 'Scheduled', 'S002', 'IT001', 'T001'),
-('S003', 'Financial Accounting', '0000-00-00 00:00:00', '10:00:00', '11:00:00', 'Scheduled', 'S003', 'FIN002', 'T018'),
-('S004', 'Strategic Management', '0000-00-00 00:00:00', '10:00:00', '11:00:00', 'Scheduled', 'S004', 'MGMT003', 'T015'),
-('S005', 'Digital Marketing', '0000-00-00 00:00:00', '10:00:00', '11:00:00', 'Scheduled', 'S005', 'MKT001', 'T001');
+('S001', 'Painting and Drawing', '01:00:00', '10:00:00', '11:00:00', 'Scheduled', 'S001', 'ART001', 'T006'),
+('S002', 'Computer Science', '01:00:00', '10:00:00', '11:00:00', 'Scheduled', 'S002', 'IT001', 'T001'),
+('S003', 'Financial Accounting', '01:00:00', '10:00:00', '11:00:00', 'Scheduled', 'S003', 'FIN002', 'T018'),
+('S004', 'Strategic Management', '01:00:00', '10:00:00', '11:00:00', 'Scheduled', 'S004', 'MGMT003', 'T015'),
+('S005', 'Digital Marketing', '01:00:00', '10:00:00', '11:00:00', 'Scheduled', 'S005', 'MKT001', 'T001');
 
 --
 -- Triggers `sessions`
@@ -212,25 +213,22 @@ CREATE TABLE `student` (
   `username` varchar(30) NOT NULL,
   `pNum` int(30) NOT NULL,
   `password` varchar(50) NOT NULL,
-  `major` varchar(100) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `tutorID` varchar(30) NOT NULL,
-  `courseID` varchar(30) NOT NULL
+  `email` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `student`
 --
 
-INSERT INTO `student` (`studentID`, `fName`, `lName`, `username`, `pNum`, `password`, `major`, `email`, `tutorID`, `courseID`) VALUES
-('S001', 'John', 'Miller', 'johnm', 1234545, 'password1', 'Computer Science', 'john.miller@example.com', 'T001', 'IT001'),
-('S002', 'Sarah', 'Kim', 'sarahk', 4383647, 'password2', 'Digital Marketing', 'sarah.kim@example.com', 'T001', 'MKT001'),
-('S003', 'Michael', 'Taylor', 'michaelt', 2147471, 'password3', 'Social Media Marketing', 'michael.taylor@example.com', 'T003', 'MKT003'),
-('S004', 'Sophia', 'Davis', 'sophiad', 2147483, 'password4', 'Human Resource Management', 'sophia.davis@example.com', 'T016', 'MGMT004'),
-('S005', 'Emily', 'Rodriguez', 'emilyr', 2183647, 'password5', 'Financial Accounting', 'emily.rodriguez@example.com', 'T018', 'FIN002'),
-('S006', 'David', 'Garcia', 'davidg', 4836472, 'password6', 'Digital Art', 'david.garcia@example.com', 'T006', 'ART002'),
-('S007', 'Sarah', 'Kim', 'sarahk', 4303647, 'password7', 'Ceramics and Pottery', 'sarah.kim@example.com', 'T006', 'ART003'),
-('S008', 'Michael', 'Taylor', 'michaelt', 2147001, 'password3', 'Artificial Intelligence', 'michael.taylor@example.com', 'T012', 'IT005');
+INSERT INTO `student` (`studentID`, `fName`, `lName`, `username`, `pNum`, `password`, `email`) VALUES
+('S001', 'John', 'Miller', 'johnm', 1234545, 'password1', 'john.miller@example.com'),
+('S002', 'Sarah', 'Kim', 'sarahk', 4383647, 'password2', 'sarah.kim@example.com'),
+('S003', 'Michael', 'Taylor', 'michaelt', 2147471, 'password3', 'michael.taylor@example.com'),
+('S004', 'Sophia', 'Davis', 'sophiad', 2147483, 'password4', 'sophia.davis@example.com'),
+('S005', 'Emily', 'Rodriguez', 'emilyr', 2183647, 'password5', 'emily.rodriguez@example.com'),
+('S006', 'David', 'Garcia', 'davidg', 4836472, 'password6', 'david.garcia@example.com'),
+('S007', 'Sarah', 'Kim', 'sarahk', 4303647, 'password7', 'sarah.kim@example.com'),
+('S008', 'Michael', 'Taylor', 'michaelt', 2147001, 'password3', 'michael.taylor@example.com');
 
 --
 -- Triggers `student`
@@ -369,9 +367,7 @@ ALTER TABLE `sessions`
 --
 ALTER TABLE `student`
   ADD PRIMARY KEY (`studentID`),
-  ADD UNIQUE KEY `unique_pnum` (`pNum`),
-  ADD KEY `tutorID` (`tutorID`),
-  ADD KEY `courseID` (`courseID`);
+  ADD UNIQUE KEY `unique_pnum` (`pNum`);
 
 --
 -- Indexes for table `tutor`
@@ -413,13 +409,6 @@ ALTER TABLE `sessions`
   ADD CONSTRAINT `sessions_ibfk_1` FOREIGN KEY (`studentID`) REFERENCES `student` (`studentID`),
   ADD CONSTRAINT `sessions_ibfk_2` FOREIGN KEY (`courseID`) REFERENCES `course` (`courseID`),
   ADD CONSTRAINT `sessions_ibfk_3` FOREIGN KEY (`tutorID`) REFERENCES `tutor` (`tutorID`);
-
---
--- Constraints for table `student`
---
-ALTER TABLE `student`
-  ADD CONSTRAINT `student_ibfk_1` FOREIGN KEY (`tutorID`) REFERENCES `tutor` (`tutorID`),
-  ADD CONSTRAINT `student_ibfk_2` FOREIGN KEY (`courseID`) REFERENCES `course` (`courseID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -46,7 +46,7 @@ if(isset($_COOKIE['user_id'])){
 </head>
 <body>
 
-<?php include 'components/user_header.php'; ?>
+<?php include 'header.php'; ?>
 
 <section class="form-container">
 
@@ -61,8 +61,6 @@ if(isset($_COOKIE['user_id'])){
    </form>
 
 </section>
-
-<?php include 'components/footer.php'; ?>
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>

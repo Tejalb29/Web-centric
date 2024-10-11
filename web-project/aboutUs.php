@@ -27,7 +27,7 @@ if(isset($_COOKIE['user_id'])){
 </head>
 <body>
 
-<?php include 'components/user_header.php'; ?>
+<?php include 'header.php'; ?>
 
 <!-- about section starts  -->
 
@@ -76,7 +76,7 @@ if(isset($_COOKIE['user_id'])){
       </div>
 
       <div class="box">
-         <p>I love the flexibility that Virtu-Learn offers. I can schedule sessions around my busy life, and the online platform is easy to use.</p>
+         <p>I love the flexibility that Virtu-Learn offers. I can schedule sessions around my busy life and this helps me balance my studies with other commitments.</p>
          <div class="user">
             <div>
                <h3>sarahk</h3>
@@ -145,8 +145,6 @@ if(isset($_COOKIE['user_id'])){
 
 <!-- reviews section ends -->
 
-
-<?php include 'components/footer.php'; ?>
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>

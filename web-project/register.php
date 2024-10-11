@@ -96,7 +96,7 @@ if (isset($_POST['submit'])) {
 </head>
 <body>
 
-<?php include 'components/user_header.php'; ?>
+<?php include 'header.php'; ?>
 
 <section class="form-container">
    <form class="register" action="" method="post" enctype="multipart/form-data">
@@ -126,7 +126,6 @@ if (isset($_POST['submit'])) {
    </form>
 </section>
 
-<?php include 'components/footer.php'; ?>
 
 <!-- Custom JS file link -->
 <script src="js/script.js"></script>

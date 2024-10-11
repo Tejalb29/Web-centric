@@ -21,7 +21,7 @@ $user_id = $_COOKIE['user_id'] ?? '';
 </head>
 <body>
 
-<?php include 'components/user_header.php'; ?>
+<?php include 'header.php'; ?>
 
 <!-- Courses section starts -->
 <section class="courses">
