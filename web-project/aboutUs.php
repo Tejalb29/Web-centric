@@ -42,7 +42,7 @@ if(isset($_COOKIE['user_id'])){
       <div class="content">
          <h3>why choose us?</h3>
          <p>Virtu-Learn combines personalized tutoring with expert educators and flexible scheduling to support every learner. Our passionate tutors create engaging learning experiences, making education effective and enjoyable. Whether you need homework help or exam preparation, we provide a safe and supportive environment to help you achieve your academic goals. Unlock your potential with Virtu-Learn!</p>
-         <a href="courses.html" class="inline-btn">our courses</a>
+         <a href="course.php" class="inline-btn">our courses</a>
       </div>
 
    </div>

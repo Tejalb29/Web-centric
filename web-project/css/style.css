@@ -353,3 +353,25 @@
     transform: scale(1.05); /* Slightly increase size on hover */
     
 }
+
+/*HOME CSS*/
+.description {
+    background-color: var(--light-bg); /* Light background for the section */
+    padding: 2rem; /* Padding around the content */
+    border-radius: .5rem; /* Rounded corners */
+    text-align: center; /* Center text alignment */
+    margin: 2rem 0; /* Margin for spacing above and below */
+}
+
+.description h2 {
+    font-size: 2.5rem; /* Font size for the heading */
+    color: var(--main-color); /* Main color for the heading */
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+.description p {
+    font-size: 1.8rem; /* Font size for the paragraphs */
+    color: var(--black); /* Color for the text */
+    line-height: 1.6; /* Line height for better readability */
+    margin: 0.5rem 0; /* Space above and below paragraphs */
+}
