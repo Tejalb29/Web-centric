@@ -25,7 +25,7 @@
                 <ul>
                     <li><a href="#courses">Courses</a></li>
                     <li><a href="#Enroll">Enrollment</a></li>
-                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="aboutUs.php">Reviews</a></li>
                     <li><a href="ContactUs.html">Contact Us</a></li>
                     <li><a href="SignIn.html">Login</a></li>
                     <li class="search-container">
